@@ -22,6 +22,8 @@
         <td>{{ student.email }}</td>
         <td>{{ student.phone_number }}</td>
         <td>
+            <a href="{% url 'update_student' student.pk %}">Update</a>
+
             <a href="{% url 'delete_student' student.pk %}">Delete</a>
         </td>
     </tr>
